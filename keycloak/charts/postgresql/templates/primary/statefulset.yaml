@@ -646,7 +646,6 @@ spec:
         labels: {{- include "common.tplvalues.render" (dict "value" .Values.primary.persistence.labels "context" $) | nindent 10 }}
         {{- end }}
       spec:
-        storageClassName: ktc-nfs-client
         accessModes:
         {{- range .Values.primary.persistence.accessModes }}
           - {{ . | quote }}
