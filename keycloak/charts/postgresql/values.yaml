@@ -239,6 +239,10 @@ ldap:
 ## @param postgresqlDataDir PostgreSQL data dir folder
 ##
 postgresqlDataDir: /bitnami/postgresql/data
+volumePermissions:
+  enabled: true
+securityContext:
+  fsGroup: 1001
 ## @param postgresqlSharedPreloadLibraries Shared preload libraries (comma-separated list)
 ##
 postgresqlSharedPreloadLibraries: "pgaudit"
