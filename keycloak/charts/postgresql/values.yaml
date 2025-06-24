@@ -651,6 +651,8 @@ primary:
     ## Note: useful when using custom PostgreSQL images
     ##
     mountPath: /bitnami/postgresql
+    volumePermissions:
+      enabled: true
     ## @param primary.persistence.subPath The subdirectory of the volume to mount to
     ## Useful in dev environments and one PV for multiple services
     ##
