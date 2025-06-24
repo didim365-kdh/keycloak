@@ -653,6 +653,8 @@ primary:
     mountPath: /bitnami/postgresql
     volumePermissions:
       enabled: true
+    securityContext:
+      fsGroup: 1001
     ## @param primary.persistence.subPath The subdirectory of the volume to mount to
     ## Useful in dev environments and one PV for multiple services
     ##
