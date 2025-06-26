@@ -284,13 +284,7 @@ args: []
 ##   - name: FOO
 ##     value: "bar"
 ##
-extraEnvVars:
-  - name: KC_HOSTNAME_STRICT
-    value: "false"
-  - name: KC_HOSTNAME_STRICT_HTTPS
-    value: "false"
-  - name: KC_HTTP_ENABLED
-    value: "true"
+extraEnvVars: []
 ## @param extraEnvVarsCM Name of existing ConfigMap containing extra env vars
 ##
 extraEnvVarsCM: ""
