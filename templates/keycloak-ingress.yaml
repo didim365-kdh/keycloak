@@ -19,7 +19,8 @@ metadata:
 spec:
   ingressClassName: kong
   rules:
-    - http:
+    - host: www.keycloak.com
+      http:
         paths:
           - path: /
             pathType: Prefix
@@ -28,3 +29,4 @@ spec:
                 name: kdh-0427-keycloak
                 port:
                   number: 80
+
