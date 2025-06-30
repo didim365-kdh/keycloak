@@ -284,9 +284,7 @@ args: []
 ##   - name: FOO
 ##     value: "bar"
 ##
-extraEnvVars:
-  - name: KEYCLOAK_METRICS_ENABLED
-    value: "true"
+extraEnvVars: []
 
 ## @param extraEnvVarsCM Name of existing ConfigMap containing extra env vars
 ##
@@ -1015,7 +1013,7 @@ metrics:
   ## @param metrics.enabled Enable exposing Keycloak statistics
   ## ref: https://github.com/bitnami/containers/tree/main/bitnami/keycloak#enabling-statistics
   ##
-  enabled: false
+  enabled: true
   ## Keycloak metrics service parameters
   ##
   service:
